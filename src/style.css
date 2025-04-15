@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f3f4f6, #e5e7eb); /* Soft gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #374151;
+    animation: backgroundMove 10s infinite alternate; /* Moving background */
+}
+
+/* Background Animation */
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Contact Form Container */
+.contact-form-container {
+    background-color: #ffffff; /* White background for the container */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #2563eb; /* Blue color for the title */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #6b7280; /* Medium gray for description text */
+}
+
+/* Form Styles */
+form {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 0.9em;
+    color: #374151;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 5px;
+    font-size: 0.9em;
+    box-sizing: border-box;
+    color: #374151;
+    background-color: #f9fafb;
+    margin-bottom: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #60a5fa;
+    box-shadow: 0 0 5px rgba(96, 165, 250, 0.5);
+    transform: scale(1.02);
+}
+
+/* Button Styles */
+button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Thank You Message */
+#thank-you-message {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out; /* Smooth fade-in animation */
+}
+
+#thank-you-message h2 {
+    font-size: 1.8em;
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+#thank-you-message p {
+    font-size: 1em;
+    color: #374151;
+}
+
+/* Hidden Class */
+.hidden {
+    display: block; /* Ensure hidden elements are not displayed */
+}
